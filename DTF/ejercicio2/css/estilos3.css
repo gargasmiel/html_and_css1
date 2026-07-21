@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "d . b"
+    "c a b"
+    ;
+    gap: 10px;
+}
+
+.cajas{
+    border: 1px black solid;
+    background-color: rgb(28,80 ,97 );
+    border-radius: 15px;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}

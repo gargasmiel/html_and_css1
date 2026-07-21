@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    border-bottom: #2b8a5a 1px solid;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.menu > ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.menu > ul > li{
+    position: relative;
+}
+
+.menu > ul > li > a{
+    display: block;
+    padding:  10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu >ul>li:hover >a{
+    color: #44e67f;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #172636;
+}
+.menu >ul>li:hover .submenu{
+    display: block;
+}
+
+.submenu > li{
+    width: 100%;
+
+}
+
+.submenu>li>a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(213, 231,200);
+    text-decoration: none;
+    transition: 2s;
+    background-color: #1a3245;
+}
+
+.submenu>li>a:hover{
+    background-color: #5fdfeb;
+}
+
+.contenedor{
+    width:90%;
+    max-width: 900px ;
+    margin: 40px auto;
+}
+
+.perfil{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.perfil h1{
+    font-size: 3em;
+    color: #44e67f;
+    padding-top:40px;
+}
+
+.foto{
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #34d17b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px white;
+}
+
+.foto svg{
+    width: 80px;
+    height: 80px;
+}
+
+.foto path{
+    fill:blueviolet;
+}
+
+.cargo{
+    letter-spacing: 4px;
+    color: #34d17b;
+    font-size: 24px;
+    font-family:monospace;
+    font-weight: 200;
+    
+}
+
+.informacion{
+    border:1px solid #2b8a5a;
+    background-color: #172636;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+.informacion h2{
+    color: #34d17b;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #2c3f52;
+}
+
+.fila span{
+    width:180px;
+    color: #676b67;
+}
+
+.fila strong{
+    flex:1px;
+}
+
+.sobre{
+    border: 1px solid #2b8a5a;
+    background-color: #172636;
+    border-radius: 20px 10px 5px 30px;
+    padding: 35px;
+}
+
+.sobre h3{
+    color: #34d17b;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.sobre span{
+    flex: 1px;
+}
+
